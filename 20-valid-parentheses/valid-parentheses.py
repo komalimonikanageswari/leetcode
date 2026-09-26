@@ -2,6 +2,8 @@ class Solution:
     def isValid(self, s: str) -> bool:
         open_b = "({["
         close_b = ")}]"
+        # we can also use dictionaries 
+        # d = dict(zip(close_b,open_b)) # ('(':')' , '{' : '}' , '[' : ']')
         st = []
         for i in s :
             # open brackets go into the stack 
